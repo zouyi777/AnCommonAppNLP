@@ -9,11 +9,14 @@ import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class AndroidChengjingshiUtils {
+/**
+ * 安卓4.4的一般做法
+ */
+public class ImmerseStatusBarV4_4 {
 	
 	private Activity activity;
 	
-	public AndroidChengjingshiUtils(Activity activity){
+	public ImmerseStatusBarV4_4(Activity activity){
 		this.activity=activity;
 	}
 	

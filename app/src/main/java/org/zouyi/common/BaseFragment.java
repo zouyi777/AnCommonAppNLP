@@ -21,9 +21,6 @@ public abstract class BaseFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         baseView = inflater.inflate(R.layout.fragment_base, container, false);
         tvTitle = (TextView) baseView.findViewById(R.id.tvTitle);
-        //设置沉浸式状态栏
-//        AndroidChengjingshiUtils chengjingshiUtils=new AndroidChengjingshiUtils(getActivity());
-//        chengjingshiUtils.setImmerseLayout(baseView.findViewById(R.id.llTitle),true);
         flContent = (FrameLayout) baseView.findViewById(R.id.flContent);
         return baseView;
     }

@@ -1,15 +1,21 @@
 package org.zouyi.common;
 
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.zouyi.common.home.HomeFragment;
 import org.zouyi.common.my.MyFragment;
+import org.zouyi.common.utils.ImmerseStatusBarV6;
 import org.zouyi.common.view.NoScrollViewPager;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ImmerseStatusBarV6.setImmerseStatusBar(this);
         setContentView(R.layout.activity_main);
-
         initFragments();
         mTablayout = (TabLayout) findViewById(R.id.tablayout);
         mViewPager = (NoScrollViewPager) findViewById(R.id.viewpager);

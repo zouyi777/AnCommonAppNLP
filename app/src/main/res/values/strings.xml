@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">通用App</string>
+    <string name="nav_title">导航条</string>
 </resources>

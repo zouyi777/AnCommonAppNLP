@@ -15,13 +15,13 @@ import org.zouyi.common.view.PullFlashLoadMoreListView;
 
 
 /**
- * 消息
+ * 首页
  */
 public class HomeFragment extends BaseFragment {
     
     private View view;
     private PullFlashLoadMoreListView plListViewMessage;
-    private HomeAdapter messageAdapter;
+    private HomeAdapter homeAdapter;
     private List<String> messages;
 
     public static HomeFragment newInstance(String data) {
@@ -39,7 +39,7 @@ public class HomeFragment extends BaseFragment {
         tvTitle.setText(getArguments().getString("key"));
         refreshMore();
         flContent.addView(view);
-        messageAdapter = new HomeAdapter(getActivity());
+        homeAdapter = new HomeAdapter(getActivity());
         initData();
         return baseView;
     }
@@ -60,8 +60,8 @@ public class HomeFragment extends BaseFragment {
         messages.add("最近在干嘛");
         messages.add("最近在干嘛");
         messages.add("最近在干嘛");
-        messageAdapter.loadData(messages);
-        plListViewMessage.setAdapter(messageAdapter);
+        homeAdapter.loadData(messages);
+        plListViewMessage.setAdapter(homeAdapter);
     }
     /**
      * 初始化下拉刷新，上拉更多
@@ -89,7 +89,7 @@ public class HomeFragment extends BaseFragment {
                     @Override
                     public void run() {
                         messages.add("最近在干嘛");
-                        messageAdapter.notifyDataSetChanged();
+                        homeAdapter.notifyDataSetChanged();
                         //通知listview加载完毕
                         plListViewMessage.loadComplete();
                     }
