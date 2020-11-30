@@ -10,7 +10,6 @@ import java.util.List;
 
 import org.zouyi.common.home.HomeFragment;
 import org.zouyi.common.my.MyFragment;
-import org.zouyi.common.utils.ImmerseStatusBar;
 import org.zouyi.common.view.NoScrollViewPager;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ImmerseStatusBar.setImmerseStatusBar(this,false);
         setContentView(R.layout.activity_main);
         initFragments();
         mTablayout = (TabLayout) findViewById(R.id.tablayout);
