@@ -18,6 +18,6 @@ public class LoadActivity extends AppCompatActivity {
                 startActivity(new Intent(LoadActivity.this,MainActivity.class));
                 LoadActivity.this.finish();
             }
-        },3000);
+        },500);
     }
 }
