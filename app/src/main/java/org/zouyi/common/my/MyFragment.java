@@ -114,6 +114,7 @@ public class MyFragment extends BaseFragment implements View.OnClickListener {
                     }
                     @Override
                     public void onError(Throwable e) {
+                        progressDialog.dismiss();
                         e.printStackTrace(); //请求过程中发生错误
                         Toast.makeText(getActivity(),e.getMessage(),Toast.LENGTH_LONG).show();
                     }

@@ -16,7 +16,7 @@
         android:layout_marginTop="20dp"
         android:ems="20"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="请输入关键词句" />
 
     <Button
         android:id="@+id/btn_request"
