@@ -21,7 +21,7 @@
     <Button
         android:id="@+id/btn_request"
         android:layout_width="359dp"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="76dp"
@@ -31,8 +31,11 @@
         android:id="@+id/tv_dispaly"
         android:layout_width="352dp"
         android:layout_height="100dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorLoad"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="167dp" />
+        android:layout_marginTop="167dp"
+        android:gravity="center"/>
 
 </RelativeLayout>
