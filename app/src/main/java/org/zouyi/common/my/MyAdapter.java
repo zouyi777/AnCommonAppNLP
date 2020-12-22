@@ -1,4 +1,4 @@
-package org.zouyi.common.home;
+package org.zouyi.common.my;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,13 +13,13 @@ import java.util.List;
 
 import org.zouyi.common.R;
 
-public class HomeAdapter extends BaseAdapter {
+public class MyAdapter extends BaseAdapter {
 
     private LayoutInflater inflater;
     private Context context;
     private List<String> messages;
 
-    public HomeAdapter(Context context) {
+    public MyAdapter(Context context) {
         inflater = LayoutInflater.from(context);
         messages = new ArrayList<String>();
         this.context = context;

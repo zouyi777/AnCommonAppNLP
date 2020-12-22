@@ -1,41 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="15dp"
-    android:paddingRight="15dp"
     tools:context=".my.MyFragment">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="359dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:ems="20"
-        android:inputType="textPersonName"
-        android:hint="请输入关键词句" />
+    <org.zouyi.common.view.PullFlashLoadMoreListView
+        android:id="@+id/plListViewMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btn_request"
-        android:layout_width="359dp"
-        android:layout_height="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="76dp"
-        android:text="请求" />
+    </org.zouyi.common.view.PullFlashLoadMoreListView>
 
-    <TextView
-        android:id="@+id/tv_dispaly"
-        android:layout_width="352dp"
-        android:layout_height="100dp"
-        android:textSize="20sp"
-        android:textColor="@color/colorLoad"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="167dp"
-        android:gravity="center"/>
-
-</RelativeLayout>
+</LinearLayout>

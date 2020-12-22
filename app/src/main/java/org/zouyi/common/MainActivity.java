@@ -8,8 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.zouyi.common.home.HomeFragment;
 import org.zouyi.common.my.MyFragment;
+import org.zouyi.common.home.HomeFragment;
 import org.zouyi.common.view.NoScrollViewPager;
 
 public class MainActivity extends AppCompatActivity {
